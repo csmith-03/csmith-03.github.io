@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 </html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Project Page</title>
     <style>
         body {
             font-family: "Goudy Bookletter 1911", sans-serif;
@@ -22,10 +23,12 @@
             padding: 1rem;
         }
         .container {
+            display: flex-box;
+            justify-content: center;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: rgb(255, 255, 255);
+            background-color: #040113;
         }
         .tab {
           background-color: #040113;  
@@ -35,6 +38,24 @@
             height: 50px;
             width:100px;
             position: center;
+        }
+        .box {
+            height: justify;
+            width: justify;
+            text-align: center;
+            margin: 1rem;
+            padding: 2rem;
+            border: 1px solid rgb(255, 0, 0);
+
+        }
+        .fa {
+            padding: 10px;
+            text-align: center;
+            font-size: 100px;
+            width: 50px;
+        }
+        .fa-github {  
+            color: white;
         }
     </style>
     <div class="tab">
@@ -55,13 +76,21 @@
 </head>
 <body>
     <header>
-        <h1> Hi, I'm <span style="color:rgb(169, 185, 64)">Channing Smith</span>
-            <h4>Student and <u style="text-decoration-color:red">Aspiring Software Engineer</u></h4>
+        <h1> Projects
     </header>
 
     <main>
-        <img src="circ-headshot.png" alt="" width="300">
-        
+        <a href="https://github.com/csmith-03/" class="fa fa-github"></a>
+        <div class="container">
+            <div class="box">
+                <h3><u>Ethics Aware Artifical Intelligence Systems</u></h3>
+                <p>Currently working on a year long research project with Dr. Kris Ghosh. Research funded by NASA, and expected paper in May 2024.</p>
+            </div>
+            <div class="box">
+                <h3>This website!</h3>
+                <p>In order to showcase some of my front-end developing skills, I created this website for others to visit and reach out to me.</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
