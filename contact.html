@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: "Goudy Bookletter 1911", sans-serif;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #3b3c52;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgb(255, 255, 255);
+        }
+        .tab {
+          background-color: #3b3c52;  
+        }
+        .tab button {
+            background-color: rgb(255, 239, 148);
+            
+        }
+    </style>
+    <div class="tab">
+        <a href="welcome.html">
+            <button class="inline-block"><b>Welcome</b></button>
+          </a>
+          <a href="contact.html">
+            <button class="inline-block"><b>Contact Me</b></button>
+          </a>
+          <a href="index.html">
+            <button class="inline-block"><b>Resume</b></button>
+          </a>
+
+    </div>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <h2>Contact Information</h2>
+        <p>If you'd like to get in touch, please use the following methods:</p>
+        
+        <ul>
+            <li>Email: <a href="mailto:smithcs@g.cofc.edu">smithcs@g.cofc.edu</a></li>
+            <li>Phone: 864-684-8244</li>
+            <li>Social Media: 
+                <a href="https://www.linkedin.com/in/channing-smith-1261061b3/">LinkedIn</a>
+            </li>
+        </ul>
+        
+        <h2>Contact Form</h2>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Channing Smith. All rights reserved.</p>
+    </footer>
+</body>
+</html>
