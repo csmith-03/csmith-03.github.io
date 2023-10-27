@@ -57,16 +57,19 @@
         }
         footer {
             background-color: rgb(169, 185, 64);
-            height: 200px;
-            width: width=device-width;
-            
-        }
-        .footer {
-            height: 100;
-            width: width=device-width;
-            text-align: center;
-            line-height: 60px;
+            height: 100px;
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+}
 
+        .footer {
+            text-align: center; /* Center the content horizontally */
+        }
+
+        .footer a {
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 10px; /* Add some spacing between the icons */
         }
     </style>
     <div class="tab">
@@ -104,10 +107,9 @@
 </body>
 <footer>
     <div class="footer">
-        <h1><span style="color:#040113">Connect With Me:</span></h1>
-            <a href="https://www.linkedin.com/in/channing-smith-1261061b3/" class="fa fa-linkedin"></a>
-            <a href="mailto:smithcs@g.cofc.edu" class="fa fa-envelope"></a>
-            <a href="https://github.com/csmith-03/" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/channing-smith-1261061b3" class="fa fa-linkedin"></a>
+        <a href="mailto:smithcs@g.cofc.edu" class="fa fa-envelope"></a>
+        <a href="https://github.com/csmith-03" class="fa fa-github"></a>
     </div>
 </footer>
 </html>
