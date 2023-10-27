@@ -26,13 +26,22 @@
             background-color: rgb(255, 255, 255);
         }
         .tab {
-          background-color: #040113;  
-          text-align: center;
+            background-color: #040113;
+            text-align: center;
         }
-        .tab button {
-            background-color: rgb(169, 185, 64);
-            height: 50px;
-            width:100px;
+        .tab a {
+            background-color: rgb(169, 185, 64); /* Button background color */
+            text-decoration: none;
+            padding: 10px 20px; /* Padding for better appearance */
+            margin: 5px; /* Add some spacing between buttons */
+            border: 2px solid rgb(169, 185, 64); /* Add a border */
+            border-radius: 20px; /* Rounded corners */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .tab a:hover {
+            background-color: #333; /* Change background color on hover */
+            color: #333; /* Change text color on hover */
         }
     </style>
     <div class="tab">
